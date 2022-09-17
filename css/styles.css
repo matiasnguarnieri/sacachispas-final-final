@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+/*Globales*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  color: #000;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 25px;
+}
+
+/*Header*/
+
+.portada {
+  margin-top: 10px;
+}
+
+.contenedorEncabezado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+ul li {
+ display: inline;
+ margin-right: 90px;
+ margin-left: 90px;
+ padding: 15px;
+}
+
+.nav-link{
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-bottom: 2px solid rgba(165,112,178,0.7);
+}
+
+a:visited {
+ color: #af80c4; 
+}
+
+.buscador-input { 
+  border-radius:50px; 
+  border-width:2px; 
+  padding:9px; 
+  font-size:15px; 
+  width: 700px;
+  height: 35px;
+  opacity: .7;
+  text-align: center;
+  box-shadow: 5px 4px 8px 0px rgba(42,42,42,.31); 
+  text-shadow:0px 0px 0px rgba(42,42,42,.0); 
+  border-style:solid; 
+  border-color:#af80c4;
+}
+
+.buscador-input:focus { 
+  outline:none; 
+} 
+
+.carritoCompras {
+  color: #af80c4;
+}
+
+.logo {
+  width: 100px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight:normal;
+  letter-spacing: 5px;
+}
+
+.bannerInicio {
+  width: 100%;
+}
+
+/*Productos*/
+
+.productos{
+  display: flex;
+  justify-content: center;
+}
+
+.item{
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 5px 8px 12px rgba(0,0,0,.3);
+  transition: .5s;
+}
+
+.item:hover {
+  box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  transform: translateY(-15px);
+}
+
+.imagenProducto{
+  height: 300px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tituloProducto{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5px;
+  border-bottom: 1px rgba(136, 61, 155, 0.5) solid;
+}
+
+.precio { 
+  display: inline;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background-color: #BFA2DB;
+  padding: 5px;
+  border: 1px solid #BFA2DB;
+  border-radius: 5px 0px 0px 5px;
+  position: relative;
+  bottom: 100px;
+  left: 160px;
+}
+
+.botonSumarCarrito{
+  font-size: 20px;
+  color: #BFA2DB;
+  padding: 5px;
+  position: relative;
+  left: 20px;
+}
+
+.botonSumarCarrito:hover {
+  cursor: pointer;
+  border-bottom: 1px rgba(136, 61, 155, 0.5) solid;
+}
+
+.fraseAgregarCarrito {
+  text-transform: uppercase;
+}
+
+.productos i{
+  margin: 2px;
+  padding: 2px;
+}
+
+.cuotas{
+  font-size: 12px;
+}
+
+section h2{
+  text-align: center;
+  font-size: 23px;
+  padding: 5px;
+}
+
+/*Categorías*/
+
+.categorias{
+  display: flex;
+  justify-content: center;
+}
+
+.categorias img{
+  width: 200px;
+  border-radius: 2px;
+  box-shadow: 5px 8px 12px rgba(0,0,0,.3);
+}
+
+.categorias a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.imagenCategoria{
+  margin: 20px;
+  padding: 20px;
+}
+
+.categorias p{
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5px;
+  border-bottom: 1px rgba(136, 61, 155, 0.5) solid;
+}
+
+/*Formas de Pago*/
+
+.formasPago{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.formasPago h2{
+  text-align: center;
+}
+
+.formasPago img{
+  width: 100px;
+  margin: 5px;
+  padding: 5px;
+}
+
+/*Footer*/
+
+.footer{
+  background-color: #252525;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer p{
+  font-size: 15px;
+}
+
+footer li{
+  list-style: none;
+}
+
+.social-icons{
+  display: flex;
+}
+
+footer i{
+  font-size: 20px;
+  color: white;
+  margin: 5px 5px 5px;
+  padding: 2px;
+}
+
+footer i:hover{
+  color: rgb(179, 84, 179);
+}
+
+.datosGrupo{
+  font-weight: bold;
+}
+
+.logoFooter{
+  font-size: 10px;
+}
+
+/*Simbolos*/
+.material-symbols-outlined {
+  width: 50px;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 50px,
+  'GRAD' -25,
+  'opsz' 40
+}
