@@ -20,6 +20,7 @@ body {
 }
 
 a{
+  color: #af80c4;
   text-decoration: none;
 }
 
@@ -47,9 +48,6 @@ ul {
 
 ul li {
  display: inline;
- margin-right: 90px;
- margin-left: 90px;
- padding: 15px;
 }
 
 .nav-link{
@@ -90,6 +88,12 @@ a:visited {
   width: 100px;
 }
 
+.botonesNav{
+  margin-right: 90px;
+  margin-left: 90px;
+  padding: 15px;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -103,6 +107,8 @@ h1 {
 
 .bannerInicio {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*Productos*/
@@ -240,15 +246,23 @@ section h2{
 
 /*Footer*/
 
-.footer{
+footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer{ 
   background-color: #252525;
   color: white;
   display: flex;
+  flex: auto;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
+ 
 }
 
 .footer p{
@@ -257,10 +271,7 @@ section h2{
 
 footer li{
   list-style: none;
-}
-
-.social-icons{
-  display: flex;
+  margin: 4px 4px 4px;
 }
 
 footer i{
@@ -282,12 +293,16 @@ footer i:hover{
   font-size: 10px;
 }
 
-/*Simbolos*/
-.material-symbols-outlined {
-  width: 50px;
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 50px,
-  'GRAD' -25,
-  'opsz' 40
+/*Pantalla Categorías*/
+
+.cuadricula{
+  text-align: center;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.categoria-cuadricula img{
+  width: 300px;
+  margin: 20px;
 }
