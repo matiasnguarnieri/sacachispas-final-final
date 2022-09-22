@@ -126,7 +126,7 @@ h1 {
   text-align: center;
   font-size: 25px;
   padding: 5px;
-  margin: 5px;
+  margin: 15px 5px 5px 5px;
   text-transform: uppercase;
   font-weight:normal;
   letter-spacing: 5px;
@@ -323,15 +323,37 @@ footer i:hover{
 /*Pantalla Categorías*/
 
 .cuadricula{
-  margin: 60px;
+  margin: 30px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
 
+.categoria-cuadricula {
+  
+}
+
 .categoria-cuadricula img{
   width: 300px;
   margin: 20px;
+  opacity: 0.9;
+  padding: 4px;
+  border: 1px solid #252525;
+  margin: 1px;
+}
+
+.categoria-centrado {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  color: #252525;
+  font-size: 18px;
+  background-color:#f9f9f9;
+  padding: 4px;
+  border-radius: 1px;
+  position: relative;
+  bottom: 135px;
+  left: -200px;
 }
 
 /*Detalle Producto*/
@@ -344,6 +366,7 @@ footer i:hover{
 
 .contenedor-detalle{
   width: 400px;
+  position: relative;
 }
 
 .nombre-detalle-producto{
@@ -383,6 +406,37 @@ footer i:hover{
  width: 400px;
 }
 
+input[type=number]::-webkit-inner-spin-button {
+  opacity: 1
+}
+
+.section-agregar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: -190px;
+}
+
+.input-cantidad{
+  background: transparent;
+  border: none;
+  padding: 0;
+  width: 40px;
+  margin: 5px;
+}
+
+.boton-agregar{
+  margin: 5px;
+  background: transparent;
+  border: none;
+  padding: 7px;
+  background-color:#BFA2DB;
+  color: white;
+  border-radius: 2px;
+}
+
 .productos-similares{
   display: flex;
   justify-content: center;
@@ -403,10 +457,14 @@ footer i:hover{
   flex-direction: row;
 }
 
+.productos-similares .item{
+  height: 275px;
+}
+
 .productos-similares .precio { 
   display: inline;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: normal;
   color: white;
   background-color: #BFA2DB;
   padding: 5px;
@@ -414,7 +472,7 @@ footer i:hover{
   border-radius: 5px 0px 0px 5px;
   position: relative;
   bottom: 80px;
-  left: 118px;
+  left: 141px;
 }
 
 .productos-similares .tituloProducto{
@@ -423,6 +481,8 @@ footer i:hover{
   font-size: 15px;
   font-weight: normal;
   margin: 5px;
+  color: #252525;
+  text-align: center;
   border-bottom: 1px rgba(136, 61, 155, 0.5) solid;
 }
 
