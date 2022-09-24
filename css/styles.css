@@ -276,7 +276,6 @@ section h2 {
 
 footer {
   width: 100%;
-  position:fixed;
   left:0px;
   bottom:0px;
 }
@@ -324,7 +323,6 @@ footer i:hover {
 /*Pantalla Categorías*/
 .cuadricula{
   margin: 30px;
-  margin: 60px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
