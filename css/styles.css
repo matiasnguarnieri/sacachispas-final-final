@@ -592,6 +592,7 @@ main {
 .contendor_misDirecciones {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .tablaMisDirecciones {
@@ -622,6 +623,140 @@ td {
   text-align: center;
 }
 
-.trash {
+.eliminar1 {
   position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 528px;
+  right: 348px;
+}
+
+.eliminar2 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 578px;
+  right: 348px;
+}
+
+.eliminar3 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 778px;
+  right: 348px;
+}
+
+.eliminar4 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 828px;
+  right: 348px;
+}
+
+/* CARRITO */
+.contenedor_tituloCarrito {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.contendor_tablaCarrito {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tablaCarrito {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border: solid 1px #bfa2db;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #9e66b8;
+}
+
+th {
+  padding: 20px 15px;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 15px;
+  border-bottom: solid 1px #bfa2db;
+  text-align: center;
+}
+
+.contendedor_botonPagar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.botonPagar {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+
+.botonPagar:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+
+.botonPagar:active {
+  position: relative;
+  top: 1px;
+}
+
+.eliminarDelCarrito1 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 342px;
+  right: 348px;
+}
+
+.eliminarDelCarrito2 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 392px;
+  right: 348px;
+}
+
+.eliminarDelCarrito3 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 440px;
+  right: 348px;
+}
+
+.eliminarDelCarrito4 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 485px;
+  right: 348px;
 }
