@@ -275,8 +275,10 @@ section h2 {
 /*Footer*/
 
 footer {
-  bottom: 0;
   width: 100%;
+  position:fixed;
+  left:0px;
+  bottom:0px;
 }
 
 .footer {
