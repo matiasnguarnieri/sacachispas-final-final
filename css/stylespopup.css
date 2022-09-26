@@ -7,9 +7,13 @@
     margin: auto;
     border: 2px solid #bfa2db;
     border-radius: 5px;
-    width: 320px;
-    height: 200px;
+    width: 350px;
+    height: 310px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .fa-square-xmark {
@@ -36,10 +40,6 @@
     left: 10px;
 }
 
-.tarjetas-guardadas {
-    display: flex;
-}
-
 .direcciones-guardadas {
     display: flex;
 }
@@ -51,8 +51,6 @@
 }
 
 #direcciones-guardadas {
-    position: absolute;
-    right: 15px;
     margin-left: 5px;
     padding-left: 5px;
 }
@@ -96,6 +94,10 @@
     align-items: center;
 }
 
+.guardada{
+height: 250px;
+}
+
 .pagar-otra-tarjeta label{
     font-size: 12px;
 }
@@ -109,6 +111,7 @@ width: 100%;
     justify-content: space-between;
     margin: 15px 0px;
 }
+
 .cod-vto{
     display: flex;
     justify-content: space-around;
@@ -127,6 +130,7 @@ width: 100%;
 
 .otra label {
 margin-left: 5px;
+
 }
 
 .pagar {
@@ -165,6 +169,14 @@ margin-left: 5px;
     width: 35px;
 }
 
+#piso{
+    width: 35px;
+}
+
+#dto{
+    width: 35px;
+}
+
 
 .boton-pagar-2{
     display: flex;
@@ -172,7 +184,7 @@ margin-left: 5px;
 }
 
 .boton-pagar-2 button{
-    width: 70px;
+    width: 80px;
     padding: 3px;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
     background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
@@ -187,19 +199,10 @@ margin-left: 5px;
     text-shadow: 0px 1px 0px #ffffff;
 }
 
-/*Pop up Nueva Dirección*/
-
-.pop-up-nueva-dirección{
-    border: solid 2px #bfa2db;
-    width: 300px;
-    height: 300px;
+.nueva-tarjeta{
+    height: 250px;
 }
 
-.pop-up-nueva-dirección{
-    display: flex;
-    flex-direction: column;
-}
-
-.form.item{
-    display: flex;
+#alias{
+    padding-left: 5px;
 }

@@ -116,51 +116,106 @@
         </section>
         </div>
 
-        <div class="pop-up-nueva-dirección">
-            <h2>Nueva dirección <i class="fa-solid fa-house"></i></h2>
-            <form action="">
-                <div class="form-item">
-                    <label class="l" for="alias">Alias</label>
-                <input class="ipt" type="text" name="alias" id="alias" placeholder="Alias">
-                </div>
-                
-                <div class="form-item">
-                    <label class="l" for="provincia">Provincia</label>
-                <select class="ipt" name="provincia" id="provincia">
-                    <option value=""> -- seleccionar -- </option>
-                    <option value=""> Buenos Aires </option>
-                    <option value=""> Córdoba </option>
-                </select>
-                </div>
-                
-                <div class="form-item">
-                 <label class="l" for="localidad">Provincia</label>
-                <select class="ipt" name="localidad" id="localidad">
-                    <option value=""> -- seleccionar -- </option>
-                    <option value=""> Buenos Aires </option>
-                    <option value=""> Córdoba </option>
-                </select>   
-                </div>
+           <!-- Pruebas pop ups -->
 
-                <div class="form-item">
-                  <label class="l" for="direccion">Dirección</label>
-                <input class="ipt" type="text" name="direccion" id="direccion" placeholder="Dirección">  
-                </div>
+           <div class="contenedor-popup">
+            
+            <section class="pagar-otra-tarjeta">
                 
-                <div class="form-item">
-                  <label class="l" for="telefono">Teléfono</label>
-                <input class="ipt" type="text" name="telefono" id="telefono" placeholder="Telefono">  
-                </div>
+                <h3 class="pagar">Nueva dirección <i class="fa-solid fa-house"></i></h3>
+                <i class="fa-solid fa-square-xmark"></i>
+                <form action="">
+                    <div class="form-div">
+                        <label for="alias">Alias</label>
+                        <input type="text" name="alias" id="alias" placeholder="Alias">
+                    </div class="form-div">
+                    <div class="form-div">
+                        <label for="provincia">Provincia</label>
+                        <select name="provincia" id="provincia">
+                            <option>--Seleccionar--</option>
+                            <option>BSAS</option>
+                            <option>BSAS</option>
+                            <option>BSAS</option>
+                        </select>
+                    </div>
+                    <div class="form-div">
+                        <label for="localidad">Localidad</label>
+                        <select name="localidad" id="localidad">
+                            <option>--Seleccionar--</option>
+                            <option>San Justo</option>
+                            <option>San Justo</option>
+                            <option>San Justo</option>
+                        </select>
+                    </div>
+                    <div class="form-div">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+                    </div class="form-div">
+                    <div class="form-div">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" name="telefono" id="telefono" placeholder="telefono">
+                    </div class="form-div">
+                    <div class="form-div">
+                        <div>
+                            <label for="piso">Piso</label>
+                        </div>
+
+                        <div class="cod-vto-hijo">
+                            <input type="text" name="piso" id="piso" placeholder="Piso">
+                            <label for="dto">Dto</label>
+                            <input type="text" name="dto" id="dto" placeholder="Dto">
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="boton-pagar-2">
+                        <button >Guardar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div class="contenedor-popup">
+            
+            <section class="pagar-otra-tarjeta nueva-tarjeta">
                 
-                <div class="form-item">
-                    <label class="l" for="piso">Piso</label>
-                    <input class="ipt" type="text" name="piso" id="piso" placeholder="Piso">
-                    <label for="dto">Dto</label>
-                    <input type="text" name="dto" id="dto" placeholder="Dto">
-                </div>
-            </form>
-            <button class="boton-guardar">Guardar</button>
-           </div>
+                <h3 class="pagar">Nueva tarjeta <i class="fa-solid fa-credit-card"></i></h3>
+                <i class="fa-solid fa-square-xmark"></i>
+                <form action="">
+                    <div class="form-div">
+                        <label for="alias">Alias</label>
+                        <input type="text" name="alias" id="alias" placeholder="Alias">
+                    </div class="form-div">
+                    <div class="form-div">
+                        <label for="numero-tarjeta">Número tarjeta</label>
+                        <input type="text" name="numero-tarjeta" id="numero-tarjeta" placeholder="numero tarjeta">
+                    </div class="form-div">
+                    <div class="form-div">
+                        <div>
+                            <label for="codigo">Código</label>
+                        </div>
+
+                        <div class="cod-vto-hijo">
+                            <input type="text" name="codigo" id="codigo" placeholder="Cod">
+                            <label for="vto">Vencimiento</label>
+                            <input type="text" name="vto" id="vto" placeholder="Vto">
+                        </div>
+
+                    </div>
+                    <div class="form-div">
+                        <label for="titular-nombre">Nombre Titular</label>
+                        <input type="text" name="titular-nombre" id="titular-nombre" placeholder="nombre titular">
+                    </div>
+                   
+
+                    <div class="boton-pagar-2">
+                        <button >Guardar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
        
     </main>
 
