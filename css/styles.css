@@ -274,23 +274,55 @@ section h2 {
 
 /*Footer*/
 
-footer {
-  width: 100%;
-  /* position: fixed;
-  left:0px;
-  bottom:0px; */
-}
-
 .footer {
+  width: 100%;
+  left:0px;
+  bottom:0px;
   background-color: #252525;
   color: white;
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-height: 180px;
+}
+
+.logoDelFooter {
+  width: 70px;
+  height: 70px;
+}
+
+.contenedor_datosGrupo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+
+.datosGrupo {
+  font-weight: bold;
+}
+
+.contenedor_redes {
+  display: grid;
+  justify-content: end;
+  align-content: center;
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.relojito {
+  position: relative;
+  top: 6px;
+}
+
+.horarios {
+  display: inline;
+}
+
+.redes {
+  font-weight: bold;
 }
 
 .footer p {
@@ -313,9 +345,7 @@ footer i:hover {
   color: rgb(179, 84, 179);
 }
 
-.datosGrupo {
-  font-weight: bold;
-}
+
 
 .logoFooter {
   font-size: 10px;
@@ -761,7 +791,7 @@ td {
 .contendedor_botonPagar {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .botonPagar {
@@ -795,7 +825,7 @@ td {
   position: absolute;
   color: #9e66b8;
   font-size: 30px;
-  top: 342px;
+  top: 350px;
   right: 348px;
 }
 
@@ -803,7 +833,7 @@ td {
   position: absolute;
   color: #9e66b8;
   font-size: 30px;
-  top: 392px;
+  top: 400px;
   right: 348px;
 }
 
@@ -811,7 +841,7 @@ td {
   position: absolute;
   color: #9e66b8;
   font-size: 30px;
-  top: 440px;
+  top: 450px;
   right: 348px;
 }
 
@@ -819,7 +849,39 @@ td {
   position: absolute;
   color: #9e66b8;
   font-size: 30px;
-  top: 485px;
+  top: 495px;
+  right: 348px;
+}
+
+.eliminarDelCarrito5 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 540px;
+  right: 348px;
+}
+
+.eliminarDelCarrito6 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 585px;
+  right: 348px;
+}
+
+.eliminarDelCarrito7 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 635px;
+  right: 348px;
+}
+
+.eliminarDelCarrito8 {
+  position: absolute;
+  color: #9e66b8;
+  font-size: 30px;
+  top: 685px;
   right: 348px;
 }
 
