@@ -355,8 +355,14 @@ footer i:hover {
 .cuadricula{
   margin: 30px;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categoria-cuadricula{
+  width: 33.3%;
+  padding: 2px;
+  position: relative;
 }
 
 .categoria-cuadricula img{
@@ -374,12 +380,12 @@ footer i:hover {
   display: inline-block;
   color: #252525;
   font-size: 18px;
-  background-color:#f9f9f9;
+  background-color: #f9f9f9;
   padding: 4px;
   border-radius: 1px;
-  position: relative;
-  bottom: 135px;
-  left: -200px;
+  position: absolute;
+  bottom: 40%;
+  left: 36%;
 }
 
 /*Detalle Producto*/
@@ -877,4 +883,88 @@ td {
   font-size: 30px;
   top: 685px;
   right: 348px;
+}
+
+/*Contacto*/
+
+.titulo-contacto{
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 25px 0px 25px 35px;
+}
+
+.contenedor-contacto{
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-start;
+}
+
+.contenedor-contacto article{
+  width: 50%;
+}
+
+.formulario-contacto{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+}
+
+.inline{
+  font-size: 12px;
+  display: flex;
+  margin: 5px 0px 5px 0px;
+}
+
+.inline input{
+  margin-left: 20px;
+}
+
+#mail{
+  margin-left: 35px;
+}
+
+#comentarios{
+  padding: 5px 0px;
+}
+
+.textarea{
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.boton-enviar{
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+}
+
+
+.mapa{
+  display: flex;
+  margin: auto;
+  padding: 25px;
+}
+
+.datos-contacto{
+  padding-left: 25px;
+}
+
+.datos-contacto h3{
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.datos-contacto p{
+  font-size: 12px;
+  padding: 5px;
+  padding-left: 15px;
 }
