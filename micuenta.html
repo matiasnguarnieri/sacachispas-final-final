@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Shortcut Icon" type="image/png" href="./img/new_logo_sacachispasfc.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylespopup.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -86,7 +87,6 @@
                 <i class="fa-solid fa-trash eliminar2"></i>
             </section>
 
-           
     
            <section class="contendedor_misDirecciones">
             <div class="misDirecciones"><p>Mis métodos de pago</p></div>
@@ -115,6 +115,52 @@
             <i class="fa-solid fa-trash eliminar4"></i>
         </section>
         </div>
+
+        <div class="pop-up-nueva-dirección">
+            <h2>Nueva dirección <i class="fa-solid fa-house"></i></h2>
+            <form action="">
+                <div class="form-item">
+                    <label class="l" for="alias">Alias</label>
+                <input class="ipt" type="text" name="alias" id="alias" placeholder="Alias">
+                </div>
+                
+                <div class="form-item">
+                    <label class="l" for="provincia">Provincia</label>
+                <select class="ipt" name="provincia" id="provincia">
+                    <option value=""> -- seleccionar -- </option>
+                    <option value=""> Buenos Aires </option>
+                    <option value=""> Córdoba </option>
+                </select>
+                </div>
+                
+                <div class="form-item">
+                 <label class="l" for="localidad">Provincia</label>
+                <select class="ipt" name="localidad" id="localidad">
+                    <option value=""> -- seleccionar -- </option>
+                    <option value=""> Buenos Aires </option>
+                    <option value=""> Córdoba </option>
+                </select>   
+                </div>
+
+                <div class="form-item">
+                  <label class="l" for="direccion">Dirección</label>
+                <input class="ipt" type="text" name="direccion" id="direccion" placeholder="Dirección">  
+                </div>
+                
+                <div class="form-item">
+                  <label class="l" for="telefono">Teléfono</label>
+                <input class="ipt" type="text" name="telefono" id="telefono" placeholder="Telefono">  
+                </div>
+                
+                <div class="form-item">
+                    <label class="l" for="piso">Piso</label>
+                    <input class="ipt" type="text" name="piso" id="piso" placeholder="Piso">
+                    <label for="dto">Dto</label>
+                    <input type="text" name="dto" id="dto" placeholder="Dto">
+                </div>
+            </form>
+            <button class="boton-guardar">Guardar</button>
+           </div>
        
     </main>
 

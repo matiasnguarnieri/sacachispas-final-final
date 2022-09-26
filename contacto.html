@@ -50,19 +50,24 @@
     </header>
 
     <main>
-        <section>
-            <h2>Contacto</h2>
+        <h2 class="titulo-contacto">Contacto</h2>
+        <section class="contenedor-contacto">    
             <article class="formulario-contacto">
                 <form action="#" method="post">
-                    <h3>Nombre</h3>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-                    <h3>Email</h3>
-                    <input id="mail" type="email" name="emails" placeholder="Email" required>
-                    <h3>Comentarios</h3>
-                    <textarea name="textarea" rows="10" cols="50">Comentarios</textarea>
-                    <br>
-                    <input type="submit">
+                    <div class="inline">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">  
+                    </div>
+                    <div class="inline">
+                    <label for="emails">Email</label>
+                    <input id="mail" type="email" name="emails" placeholder="Email" required>   
+                    </div>
+                    <div class="textarea">
+                    <label id="comentarios" class="textarea" for="textarea">Comentarios</label>
+                    <textarea  name="textarea" rows="10" cols="40" placeholder="Comentarios"></textarea>
+                </div>
                 </form>
+                <input class="boton-enviar" type="submit">  
             </article>
             <article class="datos-contacto">
                 <h3>Tienda Sacachispas Fútbol</h3>
@@ -74,8 +79,8 @@
                 <p>WhatsApp: 011 4687-7509</p>
             </article>
         </section>
-        <section class="mapa">
-            <iframe
+        <section >
+            <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13126.445306533753!2d-58.4529703!3d-34.6645175!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f0661b413f9b392!2sSacachispas%20F%C3%BAtbol%20Club!5e0!3m2!1ses-419!2sar!4v1663900803349!5m2!1ses-419!2sar"
                 width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Shortcut Icon" type="image/png" href="./img/new_logo_sacachispasfc.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylespopup.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -51,66 +52,155 @@
 
     <main>
 
-            <section class="contenedor_tituloCarrito">
+        <section class="contenedor_tituloCarrito">
             <h1 class="tituloCarrito">Carrito</h1>
+        </section>
+
+        <section class="contenedor_tablaCarrito">
+            <div class="tablaCarrito">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Talle</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Precio total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Camiseta</td>
+                            <td>XL</td>
+                            <td>2</td>
+                            <td>$15.000</td>
+                            <td>$30.000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Camiseta</td>
+                            <td>XL</td>
+                            <td>2</td>
+                            <td>$15.000</td>
+                            <td>$30.000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Camiseta</td>
+                            <td>XL</td>
+                            <td>2</td>
+                            <td>$15.000</td>
+                            <td>$30.000</td>
+                        </tr>
+
+                        <tr>
+                            <td>Camiseta</td>
+                            <td>XL</td>
+                            <td>2</td>
+                            <td>$15.000</td>
+                            <td>$30.000</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <i class="fa-solid fa-trash eliminarDelCarrito1"></i>
+            <i class="fa-solid fa-trash eliminarDelCarrito2"></i>
+            <i class="fa-solid fa-trash eliminarDelCarrito3"></i>
+            <i class="fa-solid fa-trash eliminarDelCarrito4"></i>
+        </section>
+
+        <div class="contendedor_botonPagar"><a href="#" class="botonPagar">Pagar</a></div>
+
+        <div class="contenedor-popup">
+            <section class="pagar-tarjeta-guardada">
+                <i class="fa-solid fa-square-xmark"></i>
+                <h3 class="pagar">Pagar <i class="fa-solid fa-credit-card"></i></h3>
+                <form action="">
+                    <p class="tarjetas-guardadas">
+                        <label for="tarjetas-guardadas">Tarjetas guardadas </label>
+                        <select name="tarjetas-guardadas" id="tarjetas-guardadas">
+                            <option>--Seleccionar--</option>
+                            <option>Visa</option>
+                            <option>Master Card</option>
+                            <option>Cabal</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="checkbox">Otra tarjeta</label>
+                    </p>
+                    <p>
+                        <label for="direcciones-guardadas">Direcciones guardadas</label>
+                        <select name="direcciones-guardadas" id="direcciones-guardadas">
+                            <option>--Seleccionar--</option>
+                            <option>Dir1</option>
+                            <option>Dir2</option>
+                            <option>Dir3</option>
+                        </select>
+                    <p>
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="checkbox">Otra dirección</label>
+                    </p>
+                    </p>
+                </form>
+                <p>
+                    <button class="boton-pagar">Pagar</button>
+                </p>
             </section>
+        </div>
+
+        <div class="contenedor-popup">
             
-            <section class="contenedor_tablaCarrito">
-                <div class="tablaCarrito">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Producto</th>
-                                <th>Talle</th>
-                                <th>Cantidad</th>
-                                <th>Precio Unitario</th>
-                                <th>Precio total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Camiseta</td>
-                                <td>XL</td>
-                                <td>2</td>
-                                <td>$15.000</td>
-                                <td>$30.000</td>
-                            </tr>
+            <section class="pagar-otra-tarjeta">
+                
+                <h3 class="pagar">Pagar <i class="fa-solid fa-credit-card"></i></h3>
+                <i class="fa-solid fa-square-xmark"></i>
+                <form action="">
+                    <div class="form-div">
+                        <label for="tarjetas-guardadas">Tarjetas guardadas</label>
+                        <select name="tarjetas-guardadas" id="tarjetas-guardadas">
+                            <option>--Seleccionar--</option>
+                            <option>Visa</option>
+                            <option>Master Card</option>
+                            <option>Cabal</option>
+                        </select>
+                    </div>
+                    <div class="otra">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="checkbox">Otra tarjeta</label>
+                    </div>
+                    <div class="form-div">
+                        <label for="numero-tarjeta">Número tarjeta</label>
+                        <input type="text" name="numero-tarjeta" id="numero-tarjeta" placeholder="numero tarjeta">
+                    </div class="form-div">
+                    <div class="form-div">
+                        <div>
+                            <label for="codigo">Código</label>
+                        </div>
 
-                            <tr>
-                                <td>Camiseta</td>
-                                <td>XL</td>
-                                <td>2</td>
-                                <td>$15.000</td>
-                                <td>$30.000</td>
-                            </tr>
+                        <div class="cod-vto-hijo">
+                            <input type="text" name="codigo" id="codigo" placeholder="Cod">
+                            <label for="vto">Vencimiento</label>
+                            <input type="text" name="vto" id="vto" placeholder="Vto">
+                        </div>
 
-                            <tr>
-                                <td>Camiseta</td>
-                                <td>XL</td>
-                                <td>2</td>
-                                <td>$15.000</td>
-                                <td>$30.000</td>
-                            </tr>
+                    </div>
+                    <div class="form-div">
+                        <label for="titular-nombre">Nombre Titular</label>
+                        <input type="text" name="titular-nombre" id="titular-nombre" placeholder="nombre titular">
+                    </div>
+                    <div class="otra">
+                        <input type="checkbox" name="checkbox" id="">
+                        <label for="checkbox">Otra dirección</label>
+                    </div>
 
-                            <tr>
-                                <td>Camiseta</td>
-                                <td>XL</td>
-                                <td>2</td>
-                                <td>$15.000</td>
-                                <td>$30.000</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-                <i class="fa-solid fa-trash eliminarDelCarrito1"></i>
-                <i class="fa-solid fa-trash eliminarDelCarrito2"></i>
-                <i class="fa-solid fa-trash eliminarDelCarrito3"></i>
-                <i class="fa-solid fa-trash eliminarDelCarrito4"></i>
+                    <div class="boton-pagar-2">
+                        <button >Pagar</button>
+                    </div>
+                </form>
             </section>
-
-            <div class="contendedor_botonPagar"><a href="#" class="botonPagar">Pagar</a></div>
-
+        </div>
     </main>
 
     <footer>

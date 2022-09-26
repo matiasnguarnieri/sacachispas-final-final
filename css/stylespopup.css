@@ -1,0 +1,205 @@
+.contenedor-popup {
+    margin: 20px;
+}
+
+.pagar-tarjeta-guardada {
+    padding: 20px;
+    margin: auto;
+    border: 2px solid #bfa2db;
+    border-radius: 5px;
+    width: 320px;
+    height: 200px;
+    position: relative;
+}
+
+.fa-square-xmark {
+    position: absolute;
+    right: -16px;
+    top: -16px;
+    font-size: 25px;
+    color: #bfa2db;
+}
+
+.fa-credit-card {
+    font-size: 15px;
+    margin-left: 3px;
+}
+
+.pagar {
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.pagar-tarjeta-guardada p {
+    padding: 5px;
+    font-size: 12px;
+    left: 10px;
+}
+
+.tarjetas-guardadas {
+    display: flex;
+}
+
+.direcciones-guardadas {
+    display: flex;
+}
+
+#tarjetas-guardadas {
+    margin-left: 5px;
+    padding-left: 5px;
+    
+}
+
+#direcciones-guardadas {
+    position: absolute;
+    right: 15px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.boton-pagar {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+    padding: 3px;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.boton-pagar:hover {
+    background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color: #f6f6f6;
+}
+
+.pagar-otra-tarjeta {
+    padding: 20px;
+    margin: auto;
+    border: 2px solid #bfa2db;
+    border-radius: 5px;
+    width: 350px;
+    height: 310px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagar-otra-tarjeta label{
+    font-size: 12px;
+}
+
+.pagar-otra-tarjeta form{
+width: 100%;
+}
+
+.form-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+.cod-vto{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.cod-vto-hijo{
+    width: 178px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.otra{
+ display: flex;
+ align-items: center;
+}
+
+.otra label {
+margin-left: 5px;
+}
+
+.pagar {
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 5px;
+}
+
+.pagar-otra-tarjeta form{
+    position: relative;
+}
+
+.pagar-otra-tarjeta p {
+    padding: 5px;
+    font-size: 12px;
+    left: 10px;
+}
+
+#numero-tarjeta{
+    margin-left: 5px;
+    padding-left: 5px;
+   
+}
+
+#titular-nombre{
+    margin-left: 5px;
+    padding-left: 5px;
+    
+}
+
+#codigo{
+    width: 35px;
+}
+
+#vto{
+    width: 35px;
+}
+
+
+.boton-pagar-2{
+    display: flex;
+    justify-content: end;
+}
+
+.boton-pagar-2 button{
+    width: 70px;
+    padding: 3px;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    color: #666666;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+/*Pop up Nueva Dirección*/
+
+.pop-up-nueva-dirección{
+    border: solid 2px #bfa2db;
+    width: 300px;
+    height: 300px;
+}
+
+.pop-up-nueva-dirección{
+    display: flex;
+    flex-direction: column;
+}
+
+.form.item{
+    display: flex;
+}
