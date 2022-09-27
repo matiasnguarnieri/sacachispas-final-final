@@ -92,6 +92,10 @@ body {
     font-size: 15px;
 }
 
+.registrate{
+    color: white;
+}
+
 .registrate:visited {
     color: white;
 }
