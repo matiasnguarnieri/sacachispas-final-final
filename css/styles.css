@@ -110,6 +110,15 @@ a:visited {
   color: #af80c4;
 }
 
+.botonCarrito {
+  font-size: 25px;
+}
+
+.botonUsuario {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
 .logo {
   width: 100px;
   margin-top: 10px;
