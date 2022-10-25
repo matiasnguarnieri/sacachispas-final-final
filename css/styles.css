@@ -146,23 +146,29 @@ h1 {
   letter-spacing: 5px;
 }
 
+.contenedor_bannerInicio {
+  width: 100%;
+  max-width: 1920px;
+  min-width: 320px;
+  margin: auto;
+}
+
 .bannerInicio {
   width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 /*Productos*/
 
 .productos {
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .item {
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
   background-color: white;
   border-radius: 7px;
   box-shadow: 5px 8px 12px rgba(0, 0, 0, 0.3);
@@ -240,16 +246,7 @@ section h2 {
 .categorias {
   display: flex;
   justify-content: center;
-}
-
-.activo{
-  display: block;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 2px;
-  width: 175px;
-  border-bottom: solid 2px #af80c4;
+  flex-wrap: wrap;
 }
 
 .categorias img {
@@ -274,6 +271,16 @@ section h2 {
   font-size: 20px;
   margin: 5px;
   border-bottom: 1px rgba(136, 61, 155, 0.5) solid;
+}
+
+.activo{
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  width: 175px;
+  border-bottom: solid 2px #af80c4;
 }
 
 /*Formas de Pago*/
@@ -368,8 +375,6 @@ footer i {
 footer i:hover {
   color: rgb(179, 84, 179);
 }
-
-
 
 .logoFooter {
   font-size: 10px;
@@ -634,7 +639,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* MI CUENTA */
 
-main {
+.main_micuenta {
   margin-top: 30px;
   margin-left: 20%;
   margin-right: 20%;
@@ -899,14 +904,6 @@ td {
   color: #9e66b8;
   font-size: 30px;
   top: 635px;
-  right: 348px;
-}
-
-.eliminarDelCarrito8 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 685px;
   right: 348px;
 }
 

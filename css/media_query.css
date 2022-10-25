@@ -1,0 +1,227 @@
+@media screen and (max-width: 480px) {
+    /* HEADER */
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .buscador-input {
+      width: 180px;
+      font-size: 13px;
+    }
+
+    .item {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* FORMAS PAGO */
+    .formasPago {
+        margin: 10px;
+    }
+    
+    .formasPago img {
+        width: 80px;
+    }
+      
+    /* FOOTER */
+
+    .footer {
+        padding: 20px;
+    }
+      
+    .logoDelFooter {
+        width: 65px;
+        height: 65px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+      
+    footer li {
+        margin: 3px 3px 3px;
+    }
+      
+    .logoFooter {
+        font-size: 10px;
+    }
+
+    /*Pantalla Categorías*/
+    .categoria-cuadricula{
+        width: 100%;
+    }
+    
+    /*Pantalla Contacto*/
+    .titulo-contacto{
+        width: 400px;
+    }
+      
+    .contenedor-contacto{
+        width: 400px;
+        flex-direction: column;
+    }
+      
+    .contenedor-contacto article{
+        width: 100%;
+    }
+
+    .mapa {
+        width: 400px;
+    }
+
+    /* MI CUENTA */
+    .main_micuenta {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .tablaMisDirecciones {
+        width: 88%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .nombreYApellido {
+        font-size: 30px;
+    }
+
+    .misDirecciones {
+        font-size: 30px;
+    }
+
+    .eliminar1 {
+        font-size: 28px;
+        top: 725px;
+        right: 30px;
+      }
+      
+      .eliminar2 {
+        font-size: 28px;
+        top: 775px;
+        right: 30px;
+      }
+      
+      .eliminar3 {
+        font-size: 28px;
+        top: 1012px;
+        right: 30px;
+      }
+      
+      .eliminar4 {
+        font-size: 28px;
+        top: 1063px;
+        right: 30px;
+      }
+
+    /* CARRITO */
+      .tablaCarrito {
+        width: 88%;
+        margin-left: 10px;
+      }
+      
+      table {
+        width: 100%;
+      }
+
+    .botonPagar {
+        margin-right: 40px;
+    }
+
+    .eliminarDelCarrito1 {
+        font-size: 28px;
+        top: 508px;
+        right: 10px;
+    }
+      
+    .eliminarDelCarrito2 {
+        font-size: 28px;
+        top: 555px;
+        right: 10px;
+    }
+      
+    .eliminarDelCarrito3 {
+        font-size: 28px;
+        top: 598px;
+        right: 10px;
+    }
+      
+    .eliminarDelCarrito4 {
+        font-size: 28px;
+        top: 650px;
+        right: 10px;
+    }
+      
+    .eliminarDelCarrito5 {
+        font-size: 28px;
+        top: 698px;
+        right: 10px;
+    }
+      
+    .eliminarDelCarrito6 {
+        font-size: 28px;
+        top: 745px;
+        right: 10px;
+    }
+      
+    .eliminarDelCarrito7 {
+        font-size: 28px;
+        top: 790px;
+        right: 10px;
+    }
+
+    /* CAMISETAS */
+
+    .cuadriculaCamisetas {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+    /* DETALLE PRODUCTO */
+
+    .detalle_main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .detalle-producto {
+        flex-direction: column;
+      }
+
+    .contenedor-detalle {
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    .contenedor-detalle p {
+        width: 100%;
+    }
+
+    .section-agregar{
+        bottom: -70px;
+    }
+
+    .productos-similares {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        flex-direction: column;
+      }
+
+    /* LOGIN */
+
+    .body_login {
+        background-image: url(../img/fondo_login_celular.png);
+        background-size: 120%;
+        margin-top: 50%;
+    }
+}
