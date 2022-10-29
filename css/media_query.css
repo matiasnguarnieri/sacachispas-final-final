@@ -18,6 +18,7 @@
     }
 
     .item {
+        
         margin: 10px;
         padding: 10px;
     }
@@ -223,5 +224,272 @@
         background-image: url(../img/fondo_login_celular.png);
         background-size: 120%;
         margin-top: 50%;
+    }
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    /* HEADER */
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5px;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .buscador-input {
+      width: 360px;
+      font-size: 13px;
+    }
+
+    .item {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* FORMAS PAGO */
+    .formasPago {
+        margin: 10px;
+    }
+    
+    .formasPago img {
+        width: 80px;
+    }
+      
+    /* FOOTER */
+
+    .footer {
+        padding: 20px;
+    }
+      
+    .logoDelFooter {
+        width: 65px;
+        height: 65px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+      
+    footer li {
+        margin: 3px 3px 3px;
+    }
+      
+    .logoFooter {
+        font-size: 10px;
+    }
+
+    /*Pantalla Categorías*/
+    .cuadricula{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
+
+    .categoria-cuadricula{
+        width: 100%;
+    }
+    
+    /*Pantalla Contacto*/
+    .titulo-contacto{
+        width: 80%;
+    }
+      
+    .contenedor-contacto{
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .formulario-contacto{
+        justify-content: left;
+        margin-left: 5%;
+    }
+      
+    .contenedor-contacto article{
+        width: 80%;
+    }
+
+    .mapa {
+        width: 80%;
+    }
+
+    /* MI CUENTA */
+    .main_micuenta {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .tablaMisDirecciones {
+        width: 88%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .nombreYApellido {
+        font-size: 25px;
+    }
+
+    .misDirecciones {
+        font-size: 30px;
+    }
+
+    .eliminar1 {
+        font-size: 28px;
+        top: 680px;
+        right: 80px;
+      }
+      
+      .eliminar2 {
+        font-size: 28px;
+        top: 735px;
+        right: 80px;
+      }
+      
+      .eliminar3 {
+        font-size: 28px;
+        top: 935px;
+        right: 80px;
+      }
+      
+      .eliminar4 {
+        font-size: 28px;
+        top: 980px;
+        right: 80px;
+      }
+
+    /* CARRITO */
+
+    .contenedor_tituloCarrito{
+        margin-left: 10px;
+    }
+      .tablaCarrito {
+        width: 88%;
+        margin-left: 10px;
+      }
+      
+      table {
+        width: 100%;
+      }
+
+    .botonPagar {
+        margin-right: 80px;
+    }
+
+    .eliminarDelCarrito1 {
+        font-size: 28px;
+        top: 490px;
+        right: 40px;
+    }
+      
+    .eliminarDelCarrito2 {
+        font-size: 28px;
+        top: 535px;
+        right: 40px;
+    }
+      
+    .eliminarDelCarrito3 {
+        font-size: 28px;
+        top: 580px;
+        right: 40px;
+    }
+      
+    .eliminarDelCarrito4 {
+        font-size: 28px;
+        top: 625px;
+        right: 40px;
+    }
+      
+    .eliminarDelCarrito5 {
+        font-size: 28px;
+        top: 673px;
+        right: 40px;
+    }
+      
+    .eliminarDelCarrito6 {
+        font-size: 28px;
+        top: 720px;
+        right: 40px;
+    }
+      
+    .eliminarDelCarrito7 {
+        font-size: 28px;
+        top: 770px;
+        right: 40px;
+    }
+
+    /* CAMISETAS */
+
+    .cuadriculaCamisetas {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    /* DETALLE PRODUCTO */
+
+    .detalle_main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .detalle-producto {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      }
+
+    .contenedor-detalle {
+        margin-bottom: 80px;
+        width: 80%;
+    }
+
+    .contenedor-detalle p {
+        width: 100%;
+    }
+
+    .section-agregar{
+        bottom: -70px;
+    }
+
+    .productos-similares {
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+    }
+
+    .imagenProducto{
+        margin: auto;
+    }
+
+    .productos-similares .precio{
+        left: 179px;
+    }
+
+
+    /* LOGIN */
+
+    .body_login {
+        background-image: url(../img/fondo_login_celular.png);
+        background-size: 100%;
+    }
+
+    .contenedor_registrarse{
+        width: 400px;
+        margin-top: 15%;
+    }
+
+    .contenedor_login{
+        width: 400px;
+        margin-top: 15%;
+    }
+
+    .user_pass{
+        margin-left: 15px;
+    }
+
+    .nombreInputsRegister{
+        margin-left: 15px;
     }
 }
