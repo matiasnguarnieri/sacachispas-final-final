@@ -997,3 +997,11 @@ td {
 .filtro {
   display: none;
 }
+
+/*Mensaje error (lo pongo acá para que lo lo pisen otros estilos, revisar)*/
+.mensaje-error{
+  font-size: 5px;
+  font-weight: normal;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
