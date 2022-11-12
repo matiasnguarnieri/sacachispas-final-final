@@ -14,36 +14,40 @@
     
     <div class="contenedor_registrarse">
         <div class="contenedor_banner"><a href="index.html"><img class="bannerParaLogin" src="./img/new_logo_sacachispasfc.png" alt=""></a></div>
-        <form class="register_form" action="login.html" method="get">
+        <form class="register_form" action="index.html" method="get" id="form">
 
         <!-- Email -->    
         <div><label class="nombreInputsRegister" for="usuario">Email:</label></div>
-        <input class="inputs_register" type="text" name="usuario" id="" placeholder="Ingrese email">
+        <input class="inputs_register" type="text" name="usuario" id="email" placeholder="Ingrese email">
        
         <!-- Nombre -->
         <div><label class="nombreInputsRegister" for="usuario">Nombre:</label></div>
-        <input class="inputs_register" type="text" name="usuario" id="" placeholder="Ingrese nombre">
+        <input class="inputs_register" type="text" name="usuario" id="nombre" placeholder="Ingrese nombre">
         
         <!-- Apellido -->
         <div><label class="nombreInputsRegister" for="usuario">Apellido:</label></div>
-        <input class="inputs_register" type="text" name="usuario" id="" placeholder="Ingrese apellido">
+        <input class="inputs_register" type="text" name="usuario" id="apellido" placeholder="Ingrese apellido">
 
         <!-- Contraseña -->
         <label class="nombreInputsRegister" for="contrasenia">Contraseña:</label>
-        <input class="inputs_register" type="password" name="contrasenia" id="" placeholder="Ingrese contraseña">
+        <input class="inputs_register" type="password" name="contrasenia" id="contraseña" placeholder="Ingrese contraseña">
         
         <!-- Repite contraseña -->
         <label class="nombreInputsRegister" for="contrasenia">Repetir contraseña:</label>
-        <input class="inputs_register" type="password" name="contrasenia" id="" placeholder="Repita la contraseña">
+        <input class="inputs_register" type="password" name="contrasenia" id="contraseñaRepetida" placeholder="Repita la contraseña">
 
         <!-- Boton Cancelar -->
         <div class="contenedor_botonCancelar"><input class="enviar_boton" type="submit" name="enviar" id="" value="Cancelar"></div>
         <!-- Boton Guardar -->
-        <div class="contenedor_botonGuardar"><input class="enviar_boton" type="submit" name="enviar" id="" value="Guardar"></div>
+        <div class="contenedor_botonGuardar"><input class="enviar_boton" type="submit" name="enviar" id="guardar" value="Guardar"></div>
 
         <p class="sinCuenta"><a class="registrate" href="index.html">Volver al inicio</a></p>
         </form>
-    </div>
 
+        <div id="mensaje" class="mensaje-error">
+
+        </div>
+    </div>
+    <script src="js/validarRegistro.js"></script>
 </body>
 </html>
