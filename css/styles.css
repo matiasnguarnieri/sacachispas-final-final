@@ -147,7 +147,7 @@ h1 {
 }
 
 .contenedor_bannerInicio {
-  width: 100%;
+  width: 95%;
   max-width: 1920px;
   min-width: 320px;
   margin: auto;
@@ -284,21 +284,25 @@ section h2 {
 }
 
 /*Formas de Pago*/
+.formasPagoContenedor {
+  width: 100%;
+}
+
+.formaformasPagoContenedor h2 {
+  text-align: center;
+}
 
 .formasPago {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 20px;
-}
-
-.formasPago h2 {
-  text-align: center;
+  margin-left: 150px;
 }
 
 .formasPago img {
-  width: 100px;
+  width: 200px;
   margin: 5px;
   padding: 5px;
 }
@@ -988,4 +992,8 @@ td {
   font-size: 12px;
   padding: 5px;
   padding-left: 15px;
+}
+
+.filtro {
+  display: none;
 }
