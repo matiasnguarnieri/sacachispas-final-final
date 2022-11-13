@@ -726,12 +726,12 @@ input[type="number"]::-webkit-inner-spin-button {
 .tablaMisDirecciones {
   margin-top: 10px;
   margin-bottom: 50px;
-  border: solid 1px #bfa2db;
+ ;
 }
 
 table {
-  width: 100%;
-  table-layout: fixed;
+  width: 800px;
+  table-layout: auto;
   border-collapse: collapse;
 }
 
@@ -751,37 +751,15 @@ td {
   text-align: center;
 }
 
-.eliminar1 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 528px;
-  right: 348px;
+table td :last-child{
+  width: 20px;
 }
 
-.eliminar2 {
-  position: absolute;
+.tachito {
   color: #9e66b8;
-  font-size: 30px;
-  top: 578px;
-  right: 348px;
+  font-size: 20px;
 }
 
-.eliminar3 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 778px;
-  right: 348px;
-}
-
-.eliminar4 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 828px;
-  right: 348px;
-}
 
 /* CARRITO */
 .contenedor_tituloCarrito {
@@ -799,11 +777,12 @@ td {
 .tablaCarrito {
   margin-top: 10px;
   margin-bottom: 30px;
-  border: solid 1px #bfa2db;
+ 
 }
 
 table {
-  width: 100%;
+  width: 800px;
+  margin: auto;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -857,61 +836,7 @@ td {
   top: 1px;
 }
 
-.eliminarDelCarrito1 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 350px;
-  right: 348px;
-}
 
-.eliminarDelCarrito2 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 400px;
-  right: 348px;
-}
-
-.eliminarDelCarrito3 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 450px;
-  right: 348px;
-}
-
-.eliminarDelCarrito4 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 495px;
-  right: 348px;
-}
-
-.eliminarDelCarrito5 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 540px;
-  right: 348px;
-}
-
-.eliminarDelCarrito6 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 585px;
-  right: 348px;
-}
-
-.eliminarDelCarrito7 {
-  position: absolute;
-  color: #9e66b8;
-  font-size: 30px;
-  top: 635px;
-  right: 348px;
-}
 
 /*Contacto*/
 

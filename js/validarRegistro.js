@@ -50,6 +50,7 @@ function validar(){
         contraseñaRepetida.classList.add("error");
     }
     if(error){
+        document.querySelector("#mensaje").classList.add("mensaje-error");
         document.querySelector("#mensaje").innerHTML=mensajesError;
     }else{
         form.submit();
