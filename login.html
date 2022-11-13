@@ -14,19 +14,23 @@
     
     <div class="contenedor_login">
         <div class="contenedor_banner"><a href="index.html"><img class="bannerParaLogin" src="./img/new_logo_sacachispasfc.png" alt=""></a></div>
-        <form class="login_form" action="login.html" method="get">
+        <form class="login_form" action="#" method="get">
 
         <div><label class="user_pass" for="usuario">Usuario:</label></div>
-        <input class="inputs_login" type="text" name="usuario" id="" placeholder="Ingrese usuario">
+        <input class="inputs_login" type="text" name="usuario" id="usuario" placeholder="Ingrese usuario" onchange="habilitarBoton()">
 
         <label class="user_pass" for="contrasenia">Contraseña:</label>
-        <input class="inputs_login" type="password" name="contrasenia" id="" placeholder="Ingrese contraseña">
+        <input class="inputs_login" type="password" name="contrasenia" id="contrasenia" placeholder="Ingrese contraseña" onchange="habilitarBoton()">
         <a class="olvidaste" href="#">¿Olvidaste la contraseña?</a>
-        <div class="contenedor_boton"><input class="enviar_boton" type="submit" name="enviar" id="" value="LOGIN"></div>
+        <div class="contenedor_boton"><input class="enviar_boton" type="submit" name="enviar" id="btnLogin" value="LOGIN" disabled onclick="validarLogin()"></div>
         <p class="sinCuenta">¿No tenés cuenta?&nbsp;<a class="registrate" href="registrate.html">Registrate</a></p>
         <p class="sinCuenta"><a class="registrate" href="index.html">Volver al inicio</a></p>
         </form>
-    </div>
+        <!-- Cajita Errores -->
+        <div id="errores">
 
+        </div>
+    </div>
+    <script src="/js/loguear.js"></script>
 </body>
 </html>
