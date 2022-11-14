@@ -14,10 +14,11 @@ carritoLleno.forEach((item)=>{
     `;
     
     tabla.insertBefore(fila, total);
-    console.log(fila);
     let eliminar = fila.querySelector(".fa-solid.fa-trash.tachito");
-    console.log(eliminar);
-
+    eliminar.addEventListener("click", ()=>{
+        eliminarProducto();
+        navigation.reload();
+    })
  });
 
 const eliminarProducto = () => {
@@ -26,4 +27,6 @@ const eliminarProducto = () => {
     carritoLleno = carritoLleno.filter((carritoId) => {
         return carritoId !== founId;
     });
+    console.log(carritoLleno);
+    localStorage.setItem("carrito", JSON.stringify(carritoLleno));
 };
