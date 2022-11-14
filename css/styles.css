@@ -758,6 +758,7 @@ table td :last-child{
 .tachito {
   color: #9e66b8;
   font-size: 20px;
+  cursor: pointer;
 }
 
 

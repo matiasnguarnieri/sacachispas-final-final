@@ -59,27 +59,21 @@
             
            <section class="contendedor_misDirecciones">
             <div class="misDirecciones"><p>Mis direcciones</p></div>
-            <div class="agregarDireccion"><a href="#" class="botonAgregarDireccion">Agregar</a></div>
+            <div class="agregarDireccion" id="agregarDireccion"><a href="#" class="botonAgregarDireccion">Agregar</a></div>
             </section>
 
             <section class="contenedor_misDirecciones">
-                <div class="tablaMisDirecciones">
-                    <table>
+                <div >
+                    <table >
                         <thead>
                             <tr>
                                 <th>Alias</th>
                                 <th>Dirección</th>
+                                <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mi depto</td>
-                                <td>xxxxxxxxxxxxxxxxx</td>
-                            </tr>
-                            <tr>
-                                <td>Casa mamá</td>
-                                <td>xxxxxxxxxxxxxxxxx</td>
-                            </tr>
+                        <tbody id="tablaMisDirecciones">
+
                         </tbody>
                     </table>
                 </div>
@@ -120,11 +114,11 @@
 
            <div class="contenedor-popup">
             
-            <section class="pagar-otra-tarjeta">
+            <section class="pagar-otra-tarjeta popup noShow" id="popUpDirecciones">
                 
                 <h3 class="pagar">Nueva dirección <i class="fa-solid fa-house"></i></h3>
-                <i class="fa-solid fa-square-xmark"></i>
-                <form action="">
+                <i class="fa-solid fa-square-xmark" id="botonCerrarDireccion"></i>
+                <form action="" id="formDirecciones">
                     <div class="form-div">
                         <label for="alias">Alias</label>
                         <input type="text" name="alias" id="alias" placeholder="Alias">
@@ -170,7 +164,7 @@
                     
 
                     <div class="boton-pagar-2">
-                        <button >Guardar</button>
+                        <button type="submit" id="guardarDireccion">Guardar</button>
                     </div>
                 </form>
             </section>
@@ -246,6 +240,7 @@
         </article>
         </section>
     </footer>
+    <script src="./js/micuenta.js"></script>
 </body>
 
 </html>
