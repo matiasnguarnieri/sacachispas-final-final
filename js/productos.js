@@ -1,5 +1,3 @@
-let carrito = [];
-
 let productos = [
     {
         id:0001,
@@ -75,6 +73,9 @@ let productos = [
     }
 ];
 
+let carrito = [];
+
+
 productos.forEach((item)=>{
     const sectionProdcuto=document.querySelector("#cuadriculaCamisetas")
     const contenido=document.createElement("div") 
@@ -94,29 +95,51 @@ productos.forEach((item)=>{
 </section>
     `;
 
-    
+   
     contenido.classList.add("productosCamisetas");
     sectionProdcuto.append(contenido);
 
        let botonAgregarCamisetas = contenido.querySelector(".boton-agregarCamisetas");
 
             botonAgregarCamisetas.addEventListener("click", ()=>{
-            console.log("carrito" , carrito);
-            carrito.push({
-            id : item.id,
-            producto : item.nombre,
-            talle : item.talle,
-            cantidad: item.cantidad,
-            precio : item.precio
-          });
+            
+            const yaExiste = carrito.some((existentes)=> existentes.id === item.id);
+            if(yaExiste){
+                carrito.map((p)=>{
+                    if(p.id === item.id){
+                        p.cantidad++;
+                    }
+                });
+            } else{
+                carrito.push({
+                    id : item.id,
+                    producto : item.nombre,
+                    talle : item.talle,
+                    cantidad: item.cantidad,
+                    precio : item.precio
+                  });
+            }
+            carritoContador();
           guardarEnLocalStorage();
+          
 });
    
 });
 
+
 const guardarEnLocalStorage = ()=>{
     localStorage.setItem("carrito", JSON.stringify(carrito));
 };
+
+const carritoContador = ()=>{
+    let pCarrito = document.querySelector(".contadorCarrito");
+    const carritoLength = carrito.length;
+    localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+    pCarrito.innerText=JSON.parse(localStorage.getItem("carritoLength"));
+};
+
+
+carritoContador();
 
 
 // function actualizarCarrito(){

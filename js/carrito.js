@@ -16,13 +16,17 @@ carritoLleno.forEach((item)=>{
     tabla.insertBefore(fila, total);
     let eliminar = fila.querySelector(".fa-solid.fa-trash.tachito");
     eliminar.addEventListener("click", ()=>{
-        eliminarProducto();
+        eliminarProducto(item.id);
         navigation.reload();
-    })
+    });
+
+    const precioFinal = carritoLleno.reduce((acumulador, producto) => acumulador + (producto.precio*producto.cantidad), 0);
+    const campoPrecioFinal = document.querySelector("#precioFinal");
+    campoPrecioFinal.innerHTML = `$${precioFinal}`;
  });
 
-const eliminarProducto = () => {
-    const founId = carritoLleno.find((element) => element.id);
+const eliminarProducto = (id) => {
+    const founId = carritoLleno.find((element) => element.id === id);
      
     carritoLleno = carritoLleno.filter((carritoId) => {
         return carritoId !== founId;

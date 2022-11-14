@@ -24,5 +24,6 @@ formDirec.addEventListener("submit", function(event){
     nuevaLinea.innerText = direc.value;
     nuevaLinea = nuevaDireccion.insertCell(2);
     nuevaLinea.innerHTML = `<i class="fa-solid fa-trash tachito" id="tachito"></i>`;
+    popUpDirecciones.classList.add("noShow");
 });
 
