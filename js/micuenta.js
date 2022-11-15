@@ -93,7 +93,7 @@ function guardarTarjetas(){
             alias : aliasTarjeta.value,
             titular : titular.value,
         });
-
+        navigation.reload();
         guardarTarjetasEnLocalStorage();
         popUpTarjetas.classList.add("noShow");
     };
