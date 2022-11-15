@@ -83,24 +83,20 @@
     
            <section class="contendedor_misDirecciones">
             <div class="misDirecciones"><p>Mis métodos de pago</p></div>
-            <div class="agregarDireccion"><a href="#" class="botonAgregarDireccion">Agregar</a></div>
+            <div class="agregarDireccion"><a href="#" class="botonAgregarDireccion" id="botonAgregarTarjeta">Agregar</a></div>
            </section>
 
            <section class="contenedor_misDirecciones">
             <div class="tablaMisDirecciones">
-                <table>
+                <table >
                     <thead>
                         <tr>
                             <th>Alias</th>
+                            <th>Titular</th>
+                            <th></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Débito visa</td>
-                        </tr>
-                        <tr>
-                            <td>Lemon Cash</td>
-                        </tr>
+                    <tbody id="tablaTarjetas">
                     </tbody>
                 </table>
             </div>
@@ -161,7 +157,7 @@
                     
 
                     <div class="boton-pagar-2">
-                        <button type="submit" id="guardarDireccion">Guardar</button>
+                        <button type="submit" id="guardarDireccion" onclick="guardarDirecciones()">Guardar</button>
                     </div>
                 </form>
             </section>
@@ -169,14 +165,14 @@
 
         <div class="contenedor-popup">
             
-            <section class="pagar-otra-tarjeta nueva-tarjeta">
+            <section class="pagar-otra-tarjeta nueva-tarjeta popup noShow" id="pagar-otra-tarjeta nueva-tarjeta">
                 
                 <h3 class="pagar">Nueva tarjeta <i class="fa-solid fa-credit-card"></i></h3>
-                <i class="fa-solid fa-square-xmark"></i>
+                <i class="fa-solid fa-square-xmark" id="botonCerrarTarjeta"></i>
                 <form action="">
                     <div class="form-div">
                         <label for="alias">Alias</label>
-                        <input type="text" name="alias" id="alias" placeholder="Alias">
+                        <input type="text" name="alias" id="aliasTarjeta" placeholder="Alias">
                     </div class="form-div">
                     <div class="form-div">
                         <label for="numero-tarjeta">Número tarjeta</label>
@@ -201,7 +197,7 @@
                    
 
                     <div class="boton-pagar-2">
-                        <button >Guardar</button>
+                        <button onclick="guardarTarjetas()">Guardar</button>
                     </div>
                 </form>
             </section>
