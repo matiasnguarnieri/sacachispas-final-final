@@ -34,3 +34,15 @@ const eliminarProducto = (id) => {
     console.log(carritoLleno);
     localStorage.setItem("carrito", JSON.stringify(carritoLleno));
 };
+
+let formTarjeta = document.querySelector("#formTarjeta");
+
+function mostrarPopUp(){
+    formTarjeta.classList.remove("noShow")
+};
+
+let botonCerrar = document.querySelector("#botonCerrar");
+
+botonCerrar.addEventListener("click", ()=>{
+    formTarjeta.classList.add("noShow")
+})

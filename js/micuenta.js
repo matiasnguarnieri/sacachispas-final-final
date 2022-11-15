@@ -25,12 +25,13 @@ function guardarDirecciones(){
     );
     guardarDireccionesEnLocalStorage();
     popUpDirecciones.classList.add("noShow");
+    //insertarDirecciones();
 };
 
 const guardarDireccionesEnLocalStorage = ()=>{
     localStorage.setItem("direcciones", JSON.stringify(direcciones));
 };
-
+//insertarDirecciones();
 let direccionesGuardadas = JSON.parse(localStorage.getItem("direcciones"));
 direccionesGuardadas.forEach((dir)=>{
 let tablaDirecciones = document.getElementById("tablaMisDirecciones");

@@ -85,11 +85,12 @@
                     
             </section>
     
-            <div class="contendedor_botonPagar"><a href="#" class="botonPagar">Pagar</a></div>
+            <div class="contendedor_botonPagar" id="botonPagar" onclick="mostrarPopUp()"> <input type="button" value="Pagar" class="botonPagar"  >
+                </div>
 
         <!-- /*Nuevo prueba*/ -->
 
-        <div class="contenedor-popup">
+        <div class="contenedor-popup noShow">
             
             <section class="pagar-otra-tarjeta guardada">
                 
@@ -132,12 +133,12 @@
             </section>
         </div>
 
-        <div class="contenedor-popup">
+        <div class="contenedor-popup noShow" id="formTarjeta">
             
             <section class="pagar-otra-tarjeta">
                 
                 <h3 class="pagar">Pagar <i class="fa-solid fa-credit-card"></i></h3>
-                <i class="fa-solid fa-square-xmark"></i>
+                <i class="fa-solid fa-square-xmark" id="botonCerrar"></i>
                 <form action="">
                     <div class="form-div">
                         <label for="tarjetas-guardadas">Tarjetas guardadas</label>
@@ -178,7 +179,7 @@
                     </div>
 
                     <div class="boton-pagar-2">
-                        <button >Pagar</button>
+                        <button>Pagar</button>
                     </div>
                 </form>
             </section>
