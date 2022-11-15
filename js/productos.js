@@ -74,7 +74,9 @@ let productos = [
 ];
 
 let carrito = [];
-
+if(localStorage.getItem("carrito")!==null){
+    carrito=JSON.parse(localStorage.getItem("carrito"));;
+};
 
 productos.forEach((item)=>{
     const sectionProdcuto=document.querySelector("#cuadriculaCamisetas")

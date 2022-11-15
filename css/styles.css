@@ -114,6 +114,11 @@ a:visited {
   font-size: 25px;
 }
 
+.contadorCarrito{
+  font-size: 20px;
+  display: inline;
+}
+
 .botonUsuario {
   font-size: 25px;
   margin-left: 10px;
