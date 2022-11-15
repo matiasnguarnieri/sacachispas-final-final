@@ -11,40 +11,55 @@ botonCerrarPopUpDireccion.addEventListener("click", ()=>{
 });
 
 let direcciones = [];
+if(localStorage.getItem("direcciones")!==null){
+    direcciones=JSON.parse(localStorage.getItem("direcciones"));;
+};
 
-const formDirec = document.getElementById("formDirecciones");
-const tablaDirecciones = document.getElementById("tablaMisDirecciones");
-const alias = document.getElementById("alias");
-const direc = document.getElementById("direccion");
-let numerito = 1;
-formDirec.addEventListener("submit", function(event){
-    event.preventDefault();
-    let nuevaDireccion = tablaDirecciones.insertRow(-1);
-    let nuevaLinea = nuevaDireccion.insertCell(0);
-    nuevaLinea.innerText = alias.value;
-    nuevaLinea = nuevaDireccion.insertCell(1);
-    nuevaLinea.innerText = direc.value;
-    nuevaLinea = nuevaDireccion.insertCell(2);
-    nuevaLinea.innerHTML = `<i class="fa-solid fa-trash tachito" id="tachito" onclick="eliminarFila(${numerito})"></i>`;
-    popUpDirecciones.classList.add("noShow");
-    numerito++;
+function guardarDirecciones(){
+    const alias = document.getElementById("alias");
+    const direc = document.getElementById("direccion");
     direcciones.push({
         alias : alias.value,
         direccion : direc.value
     }
     );
-    console.log(direcciones);
-    guardarDirecionesEnLocalStorage();
-});
+    guardarDireccionesEnLocalStorage();
+    popUpDirecciones.classList.add("noShow");
+};
 
-const guardarDirecionesEnLocalStorage = ()=>{
+const guardarDireccionesEnLocalStorage = ()=>{
     localStorage.setItem("direcciones", JSON.stringify(direcciones));
 };
 
-function eliminarFila(a){
-    tablita.deleteRow(a);
-    numerito--;
+let direccionesGuardadas = JSON.parse(localStorage.getItem("direcciones"));
+direccionesGuardadas.forEach((dir)=>{
+let tablaDirecciones = document.getElementById("tablaMisDirecciones");
+let filaDirecciones = document.createElement("tr");
+filaDirecciones.innerHTML=`
+<td>${dir.alias}</td>
+<td>${dir.direccion}</td>
+<td><i class="fa-solid fa-trash tachito" id="tachito"></i></td> 
+`;
+
+tablaDirecciones.append(filaDirecciones);
+let eliminarDir = filaDirecciones.querySelector(".fa-solid.fa-trash.tachito");
+eliminarDir.addEventListener("click", ()=>{
+    eliminarDireccion(dir.alias);
+    navigation.reload();
+});
 }
+);
+
+const eliminarDireccion = (alias) => {
+    const foundAlias = direccionesGuardadas.find((element) => element.alias === alias);
+     
+    direccionesGuardadas = direccionesGuardadas.filter((direccionAlias) => {
+        return direccionAlias !== foundAlias;
+    });
+    console.log(direccionesGuardadas);
+    localStorage.setItem("direcciones", JSON.stringify(direccionesGuardadas));
+};
+
 
 //Tarjetas
 const botonAgregarTarjeta = document.getElementById("botonAgregarTarjeta");
