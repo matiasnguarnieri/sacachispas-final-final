@@ -14,7 +14,7 @@ const formDirec = document.getElementById("formDirecciones");
 const tablaDirecciones = document.getElementById("tablaMisDirecciones");
 const alias = document.getElementById("alias");
 const direc = document.getElementById("direccion");
-
+let numerito = 1;
 formDirec.addEventListener("submit", function(event){
     event.preventDefault();
     let nuevaDireccion = tablaDirecciones.insertRow(-1);
@@ -23,7 +23,12 @@ formDirec.addEventListener("submit", function(event){
     nuevaLinea = nuevaDireccion.insertCell(1);
     nuevaLinea.innerText = direc.value;
     nuevaLinea = nuevaDireccion.insertCell(2);
-    nuevaLinea.innerHTML = `<i class="fa-solid fa-trash tachito" id="tachito"></i>`;
+    nuevaLinea.innerHTML = `<i class="fa-solid fa-trash tachito" id="tachito" onclick="eliminarFila(${numerito})"></i>`;
     popUpDirecciones.classList.add("noShow");
+    numerito++;
 });
 
+function eliminarFila(a){
+    tablita.deleteRow(a);
+    numerito--;
+}
