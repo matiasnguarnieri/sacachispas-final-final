@@ -80,13 +80,23 @@ if(localStorage.getItem("tarjetas")!==null){
 function guardarTarjetas(){
     const aliasTarjeta = document.getElementById("aliasTarjeta");
     const titular = document.getElementById("titular-nombre");
-    tarjetas.push({
-        alias : aliasTarjeta.value,
-        titular : titular.value
-    }
-    );
-    guardarTarjetasEnLocalStorage();
-    popUpTarjetas.classList.add("noShow");
+    const erroresContenedor = document.getElementById("errores");
+    const nroTarjeta = document.getElementById("numero-tarjeta").value;
+    let valorTxt = nroTarjeta.toString();
+    let ultNro = valorTxt.charAt(valorTxt.length - 1);
+    let error = false;
+    if(nroTarjeta == ""){
+        error = true;
+        erroresContenedor.innerHTML = `<p>Debes ingresar un nro. de tarjeta.</p>`
+    }else{
+        tarjetas.push({
+            alias : aliasTarjeta.value,
+            titular : titular.value,
+        });
+
+        guardarTarjetasEnLocalStorage();
+        popUpTarjetas.classList.add("noShow");
+    };
 };
 
 const guardarTarjetasEnLocalStorage = ()=>{
