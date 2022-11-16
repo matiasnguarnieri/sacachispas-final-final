@@ -32,8 +32,9 @@ let productos = [
         talle : 'XL'
     }];
 
-    let carrito = JSON.parse(localStorage.getItem("carrito"));
 
+    let carrito = [];
+   
     if(localStorage.getItem("carrito")!==null){
         carrito=JSON.parse(localStorage.getItem("carrito"));;
     };
@@ -81,3 +82,12 @@ let productos = [
     const guardarEnLocalStorage = ()=>{
         localStorage.setItem("carrito", JSON.stringify(carrito));
     };
+
+    const carritoContador = () => {
+        let pCarrito = document.querySelector(".contadorCarrito");
+        const carritoLength = carrito.length;
+        localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+        pCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
+    };
+    
+    carritoContador();

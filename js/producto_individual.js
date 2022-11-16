@@ -11,10 +11,20 @@ let productoDetalle = {
 };
 
 botonAgregar.addEventListener("click", ()=>{
-    carritoIndividual.push(productoDetalle);
+    const yaExiste = carritoIndividual.some((existentes) => existentes.id === item.id);
+    if (yaExiste){
+        carritoIndividual.map((p) => {
+            if (p.id === item.id) {
+                p.cantidad ++;
+            };
+        });
+    } else {
+        carritoIndividual.push(productoDetalle);
+    }
+    
     carritoContador();
     guardarEnLocalStorage();
-    navigator.reload();
+    navigation.reload();
 });
 
 const guardarEnLocalStorage = ()=>{

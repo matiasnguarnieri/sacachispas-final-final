@@ -513,6 +513,7 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   margin: 5px;
+  margin-left: 150px;
 }
 
 .productos-similares article {
@@ -528,6 +529,7 @@ input[type=number]::-webkit-inner-spin-button {
   height: 200px;
   display: flex;
   flex-direction: row;
+  margin: auto;
 }
 
 .productos-similares .item{
@@ -541,7 +543,7 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #bfa2db;
   padding: 5px;
   border: 1px solid #bfa2db;
-  border-radius: 5px 0px 0px 5px;
+  border-radius: 5px;
   position: relative;
   bottom: 80px;
   left: 141px;
@@ -947,4 +949,9 @@ td {
 .errorTarjeta {
   color: red;
   font-size: 5px;
+}
+
+.bodyCarrito{
+  margin: auto;
+  width: 80%;
 }
