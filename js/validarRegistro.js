@@ -11,7 +11,7 @@ const contraseñaRepetida=document.querySelector("#contraseñaRepetida");
 const form=document.querySelector("form");
 //Condiciones de expresiones
 let regexEmail=/^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[a-zA-Z]+$/;
-let regexPassword=/^[A-Z]{1}[0-9a-zA-Z]{7,}$/;
+let regexPassword=/^[A-Z]{1}(?=.*\d)(?=.*[a-z]).{5,17}$/;
 
 form.addEventListener("submit",(e)=>{
     e.preventDefault();
@@ -26,31 +26,31 @@ function validar(){
     const email=document.querySelector("#email");
     if(!regexEmail.test(email.value)){
         error=true;
-        mensajesError+="<p>El formato del email no es correcto</p>";
+        mensajesError+=`<p class="mensaje-error">El formato del email no es correcto</p>`;
         email.classList.add("error");
     }
     if(nombre.value==""){
         error=true;
-        mensajesError+="<p>El campo nombre es obligatorio</p>";
+        mensajesError+=`<p class="mensaje-error">El campo nombre es obligatorio</p>`;
         nombre.classList.add("error");
     }
     if(apellido.value==""){
         error=true;
-        mensajesError+="<p>El campo apellido es obligatorio</p>";
+        mensajesError+=`<p class="mensaje-error">El campo apellido es obligatorio</p>`;
         apellido.classList.add("error");
     }
     if(contraseña.value=="" || !regexPassword.test(contraseña.value)){
         error=true;
-        mensajesError+="<p>El campo contraseña es incorrecto</p>";
+        mensajesError+=`<p class="mensaje-error">El campo contraseña es incorrecto</p>`;
         contraseña.classList.add("error");
     }
     if(contraseñaRepetida.value!==contraseña.value || contraseñaRepetida.value==""){
         error=true;
-        mensajesError+="<p>Las contraseñas deben ser iguales</p>";
+        mensajesError+=`<p class="mensaje-error">Las contraseñas deben ser iguales</p>`;
         contraseñaRepetida.classList.add("error");
     }
     if(error){
-        document.querySelector("#mensaje").classList.add("mensaje-error");
+        // document.querySelector("#mensaje").classList.add("mensaje-error");
         document.querySelector("#mensaje").innerHTML=mensajesError;
     }else{
         form.submit();

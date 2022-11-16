@@ -1,6 +1,29 @@
 $(document).ready(function(){
     $('.contenedor_bannerInicio').slick({
         dots: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
     });
   });
 

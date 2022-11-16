@@ -83,12 +83,26 @@ function guardarTarjetas(){
     const titular = document.getElementById("titular-nombre");
     const erroresContenedor = document.getElementById("errores");
     const nroTarjeta = document.getElementById("numero-tarjeta").value;
+    
+    let mensajesErrores = "";
     let valorTxt = nroTarjeta.toString();
     let ultNro = valorTxt.charAt(valorTxt.length - 1);
     let error = false;
+    let totalNueveDigitos = 0;
+    sumaNueveRestantes();
+
     if(nroTarjeta == ""){
         error = true;
-        erroresContenedor.innerHTML = `<p>Debes ingresar un nro. de tarjeta.</p>`
+        mensajesErrores += `<p class="mensaje-error">Debes ingresar un nro. de tarjeta.</p>`;
+        erroresContenedor.innerHTML = mensajesErrores;
+    }else if(nroTarjeta.length !== 10){
+        error = true;
+        mensajesErrores += `<p class="mensaje-error">La cantidad de dígitos de la tarjeta debe ser 10.</p>`;
+        erroresContenedor.innerHTML = mensajesErrores;
+    }else if(ultNro%2 == 0 && totalNueveDigitos%2 == 0 || ultNro%2 !== 0 && totalNueveDigitos%2 !== 0){
+        error = true;
+        mensajesErrores += `<p class="mensaje-error">Número de tarjeta inválido.</p>`;
+        erroresContenedor.innerHTML = mensajesErrores;
     }else{
         tarjetas.push({
             alias : aliasTarjeta.value,
@@ -97,6 +111,13 @@ function guardarTarjetas(){
         navigation.reload();
         guardarTarjetasEnLocalStorage();
         popUpTarjetas.classList.add("noShow");
+    }
+
+
+    function sumaNueveRestantes(){
+        for (let i = 0; i < valorTxt.length-1; i++) {
+            totalNueveDigitos += parseInt(valorTxt[i], 10);
+        };
     };
 };
 

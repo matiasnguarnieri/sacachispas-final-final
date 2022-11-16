@@ -74,6 +74,7 @@ let productos = [
 ];
 
 let carrito = [];
+
 if(localStorage.getItem("carrito")!==null){
     carrito=JSON.parse(localStorage.getItem("carrito"));;
 };
@@ -89,20 +90,19 @@ productos.forEach((item)=>{
             <span class="precioCamisetas">$${item.precio}</span>
         <div class="formularioParaSlider">
             <form action="">
-            <input class="input-cantidadCamisetas" type="number" name="cantidad" value="${item.cantidad}" min="1" max="10" step="">
+            <input class="input-cantidadCamisetas" type="number" name="cantidad" value="" min="1" max="10" step="" id="botonCantidad">
             </form>
             <button class="boton-agregarCamisetas">Agregar&nbsp;<span><i class="fa-solid fa-cart-plus"></i></span></button>
         </div>
     </article>
 </section>
     `;
-
    
     contenido.classList.add("productosCamisetas");
     sectionProdcuto.append(contenido);
 
-       let botonAgregarCamisetas = contenido.querySelector(".boton-agregarCamisetas");
-
+        let botonAgregarCamisetas = contenido.querySelector(".boton-agregarCamisetas");
+        let botonCantidad = document.getElementById("botonCantidad").value;
             botonAgregarCamisetas.addEventListener("click", ()=>{
             
             const yaExiste = carrito.some((existentes)=> existentes.id === item.id);
@@ -118,7 +118,7 @@ productos.forEach((item)=>{
                     producto : item.nombre,
                     talle : item.talle,
                     cantidad: item.cantidad,
-                    precio : item.precio
+                    precio : item.precio,
                   });
             }
             carritoContador();

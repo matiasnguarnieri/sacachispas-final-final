@@ -32,7 +32,6 @@ let productos = [
         talle : 'XL'
     }];
 
-
     let carrito = JSON.parse(localStorage.getItem("carrito"));
 
     if(localStorage.getItem("carrito")!==null){

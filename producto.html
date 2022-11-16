@@ -33,6 +33,7 @@
                 </article>
 
                 <article class="carritoCompras">
+                    <p class="contadorCarrito"></p>
                     <a href="./carrito.html"><i class="fa-solid fa-cart-shopping botonCarrito"></i></a>
                     <a href="login.html"><i class="fa-regular fa-user botonUsuario"></i></a>
                 </article>
@@ -58,7 +59,7 @@
                 <span class="precio">$20.000</span>
             </article>
             <article class="contenedor-detalle">
-                <h3 class="nombre-detalle-producto">Camiseta Urbana</h3>
+                <h3 class="nombre-detalle-producto">Remera violeta</h3>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, nisi. Soluta eligendi eum deserunt
                     saepe nobis harum mollitia, quia repellendus et voluptas ipsa porro sint perspiciatis, fuga in nemo
@@ -70,7 +71,7 @@
                     <form action="">
                         <input class="input-cantidad" type="number" name="cantidad" value="1" min="1" max="10" step="">
                     </form>
-                    <button class="boton-agregar">Agregar <span><i class="fa-solid fa-cart-plus"></i></span></button>
+                    <button class="boton-agregar" type="button" id="botonIndividual">Agregar <span><i class="fa-solid fa-cart-plus"></i></span></button>
                 </article>
             </article>
 
@@ -141,6 +142,8 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="./slick/slick.min.js"></script>
     <script src="./js/slick.js"></script>
+    <script src="./js/producto_individual.js"></script>
+    <script src="./js/contadorCarrito.js"></script>
 </body>
 
 </html>

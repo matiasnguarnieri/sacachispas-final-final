@@ -505,6 +505,7 @@ input[type=number]::-webkit-inner-spin-button {
   background-color:#BFA2DB;
   color: white;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .productos-similares {
@@ -932,10 +933,14 @@ td {
 }
 
 /*Mensaje error (lo pongo acá para que lo lo pisen otros estilos, revisar)*/
+#mensaje {
+  grid-column: 1/3;
+}
+
 .mensaje-error{
-  font-size: 5px;
+  font-size: 15px;
   font-weight: normal;
-  color: black;
+  color: red;
   font-family: Arial, Helvetica, sans-serif;
 }
 

@@ -2,7 +2,7 @@
 // const mensajeError = document.getElementById("unDiv");
 
 let totalNueveDigitos = 0;
-let valorNro = "2222222228";
+let valorNro = "3333333338";
 let valorTxt = valorNro.toString();
 let ultNro = valorTxt.charAt(valorTxt.length - 1);
 
