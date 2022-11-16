@@ -90,7 +90,7 @@ productos.forEach((item)=>{
             <span class="precioCamisetas">$${item.precio}</span>
         <div class="formularioParaSlider">
             <form action="">
-            <input class="input-cantidadCamisetas" type="number" name="cantidad" value="" min="1" max="10" step="" id="botonCantidad">
+            <input class="input-cantidadCamisetas" type="number" name="cantidad" value="${item.cantidad}" min="1" max="10" step="" id="botonCantidad">
             </form>
             <button class="boton-agregarCamisetas">Agregar&nbsp;<span><i class="fa-solid fa-cart-plus"></i></span></button>
         </div>
